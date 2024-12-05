@@ -1,5 +1,5 @@
-import 'package:cubit_block/cubite_compear/page2.dart';
-import 'package:cubit_block/cubite_compear//provider.dart';
+import 'package:cubit_block/cubiteAndProvider_compear_count/page2.dart';
+import 'package:cubit_block/cubiteAndProvider_compear_count/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
