@@ -70,9 +70,15 @@ class _Page1State extends State<Page1> {
 
                 InkWell(
                   onTap: ()async {
-                    bool check  =  context.read<CubitAndProvider>().deletNotes(dIdC:mData[index].idM!);
-                    if(check){
-                      context.watch<CubitAndProvider>().getInitialNotes();
+
+                    /// Judi direct context. read() logai delet kurile  scren black hoi jai khai karone moi
+                    /// bool chek logai use kuribo loga hoise
+                  //context.read<CubitAndProvider>().deletNotes(dIdC:mData[index].idM!);
+                   //  bool check  = context.watch()<CubitAndProvider>().deletNotes(dIdC:mData[index].idM!);
+
+                    bool check= context.read<CubitAndProvider>().deletNotes(dIdC:mData[index].idM!);
+                      if(check){
+                       context.watch<CubitAndProvider>().getInitialNotes();
                       Navigator.pop(context);
                     }
                   },
